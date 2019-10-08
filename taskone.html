@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>训练一</title>
+	<style type="text/css">
+		span{
+			color: red;
+		}
+		.name{
+			font-size: 12px;
+			color: rgba(200,159,91); 
+		}
+		body{
+			float: left;
+			position: relative;
+			left: 50%;
+			line-height: 25px;
+		}
+		div{
+			position: relative;
+			left: -50%;
+		}
+		.format{	
+			height: 25px;
+			width: 250px;
+		}
+		select{
+			height: 31px;
+			width: 254px;
+		}
+		label{
+			display: inline-block;
+			width: 100px;
+			padding: 6px 10px;
+			text-align: right;
+		}
+		html{
+			border-bottom: 10px solid #F99E30;
+		}
+	</style>
+</head>
+<body>
+	<div>
+	<form method="post" action="save.php">
+		<label><span>*</span>姓名:</label>
+		<input type="text" name="Name" class="format">
+		<span class="name">(姓名填写规则)</span>
+	</form>
+	<form method="post" action="save.php">
+		<label><span>*</span>性别:</label>
+		<input type="radio" value="1" name="gender" checked="checked">
+		<label1>男</label1>
+		<input type="radio" value="2" name="gender">
+		<label1>女</label1>
+	</form>
+	<form id="local">
+		<label><span>*</span>国家/地区:</label>
+		<select>
+			<option value="USA/美国">USA/美国</option>
+			<option value="Russia/俄罗斯">Russia/俄罗斯</option>
+			<option value="Iceland/冰岛">Iceland/冰岛</option>
+			<option value="China/中国" selected="selected">China/中国</option>
+		</select>
+	</form>
+	<form id="Document">	
+		<label><span>*</span>证件类型:</label>
+		<select>
+			<option value="居民身份证">居民身份证</option>
+			<option value="二代身份证" selected="selected">二代身份证</option>
+			<option value="居民户口本">居民户口本</option>
+		</select>
+	</form>
+	<form method="post" action="save.php">
+		<label><span>*</span>证件号码:</label>
+		<input type="text" name="Documentnum" class="format">
+	</form>
+	<form method="post" action="save.php">	
+		<label><span>*</span>出生日期:</label>
+		<input type="text" value="1999-10-30" name="brith" class="format">
+	</form>
+	<form method="post" action="save.php">	
+		<label><span>*</span>邮箱:</label>
+		<input type="text" name="emali" class="format">
+		<span class="name">请正确写常用邮箱地址默认使用邮箱接受客服反馈信息</span>
+	</form>
+	<form method="post" action="save.php">	
+		<label><span>*</span>手机号码:</label>
+		<input type="text" name="telephone" class="format">
+	</form>
+	<form method="post" action="save.php">
+		<label>固定电话:</label>
+		<input type="text" name="phone" class="format">
+	</form>
+	<form method="post" action="save.php">
+		<label>地址:</label>
+		<input type="text" name="address" class="format">
+	</form>
+	<form method="post" action="save.php">
+		<label>邮编:</label>
+		<input type="text" name="Zipcode" class="format">
+	</form>
+</div>
+</body>
+</html>
